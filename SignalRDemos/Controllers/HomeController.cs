@@ -32,6 +32,11 @@ namespace SignalRDemos.Controllers
             return View();
         }
 
+        public IActionResult HarryPotterHouses()
+        {
+            return View();
+        }
+
         public async Task<IActionResult> DeathlyHallows(string type)
         {
             if (SD.DeathlyHallowRace.ContainsKey(type))

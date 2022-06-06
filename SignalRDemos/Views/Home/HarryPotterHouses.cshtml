@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Hogwarts Houses";
+}
+
+<div class="row border p-1 mt-3">
+    <h3>Subscribed List: </h3>
+    <hr />
+    <div class="row p-2">
+        <div class="col-3">
+            <label style="color:#B52033" id="lbl_houseJoined"></label>
+        </div>
+    </div>
+</div>
+<div class="row border p-1 mt-3">
+    <h3>Subscribe: </h3>
+    <hr />
+    <div class="row p-2">
+        <div class="col-3">
+            <button class="btn btn-danger" id="btn_gryffindor">Gryffindor</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-success" id="btn_slytherin">Slytherin</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-warning" id="btn_hufflepuff">Hufflepuff</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-primary" id="btn_ravenclaw">Ravenclaw</button>
+        </div>
+    </div>
+</div>
+<div class="row border p-1 mt-3">
+    <h3>Unsubscribe: </h3>
+    <hr />
+    <div class="row p-2">
+        <div class="col-3">
+            <button class="btn btn-danger" id="btn_un_gryffindor">Gryffindor</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-success" id="btn_un_slytherin">Slytherin</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-warning" id="btn_un_hufflepuff">Hufflepuff</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-primary" id="btn_un_ravenclaw">Ravenclaw</button>
+        </div>
+    </div>
+</div>
+<div class="row border p-1 mt-3">
+    <h3>Trigger Notification: </h3>
+    <hr />
+    <div class="row p-2">
+        <div class="col-3">
+            <button class="btn btn-danger" id="trigger_gryffindor">Gryffindor</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-success" id="trigger_slytherin">Slytherin</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-warning" id="trigger_hufflepuff">Hufflepuff</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-primary" id="trigger_ravenclaw">Ravenclaw</button>
+        </div>
+    </div>
+</div>
+
+<div id="toastContainer" class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="liveToast" class="toast border-primary" role="alert" aria-live="assertive" aria-atomic="true" data-toast-mode="stack">
+        <div class="toast-header border-danger">
+            <i class="bi bi-heart me-2"></i>
+            <strong class="me-auto">New Notification</strong>
+            <small>Just now</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body" id="toastMessage">
+            Member has subscribed to
+        </div>
+    </div>
+</div>
+
+<script src="~/js/harrypotterhouses.js"></script>
